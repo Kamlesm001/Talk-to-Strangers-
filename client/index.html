@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Talk to Strangers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">Talk to Strangers</div>
+  <div id="status" class="status">Connecting…</div>
+</header>
+
+<main class="layout">
+
+  <!-- VIDEO -->
+  <section class="video-area">
+    <video id="remoteVideo" autoplay playsinline></video>
+    <video id="localVideo" autoplay muted playsinline></video>
+  </section>
+
+  <!-- CHAT -->
+  <section class="chat-area">
+    <div id="messages" class="messages"></div>
+
+    <div class="input-row">
+      <input id="chatInput" placeholder="Type a message…" />
+      <button id="sendBtn">Send</button>
+      <button id="nextBtn" class="next">Next</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  Anonymous chat · Be respectful
+</footer>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
